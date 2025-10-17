@@ -40,8 +40,7 @@ Project3/
 │
 └── README.md              Project documentation
 
-
----
+```
 
 ---
 
