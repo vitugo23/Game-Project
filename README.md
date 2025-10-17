@@ -24,21 +24,21 @@ The architecture follows a **client-server model**:
 
 ```text
 Project3/
-├── backend/             # ASP.NET Core Web API
-│   ├── Controllers/     # API endpoints
-│   ├── Models/          # Data models (e.g., Question, Player, Score)
-│   ├── Repositories/    # Data access logic
-│   ├── Services/        # Business logic (e.g., GameService)
-│   ├── appsettings.json # Connection strings, configurations
-│   └── Program.cs       # Entry point for the API
+├── backend/               ASP.NET Core Web API
+│   ├── Controllers/       API endpoints
+│   ├── Models/            Data models (e.g., Question, Player, Score)
+│   ├── Repositories/      Data access logic
+│   ├── Services/          Business logic (e.g., GameService)
+│   ├── appsettings.json   Connection strings, configurations
+│   └── Program.cs         Entry point for the API
 │
-├── frontend/            # React application
-│   ├── src/             # React components and pages
-│   ├── public/          # Static assets
-│   ├── package.json     # Frontend dependencies
+├── frontend/              React application
+│   ├── src/               React components and pages
+│   ├── public/            Static assets
+│   ├── package.json       Frontend dependencies
 │   └── ...
 │
-└── README.md            # Project documentation
+└── README.md              Project documentation
 
 
 ---
