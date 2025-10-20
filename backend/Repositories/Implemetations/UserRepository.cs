@@ -3,7 +3,7 @@ using gameProject.Data;
 using gameProject.Models;
 using gameProject.Repositories.Interfaces;
 
-namespace gameProject.Repositories.Implementations
+namespace gameProject.Repositories
 {
     public class UserRepository : IUserRepository
     {
