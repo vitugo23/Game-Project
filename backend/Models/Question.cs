@@ -27,7 +27,7 @@ namespace gameProject.Models
         public int TimeLimit { get; set; } = 30;
 
         [Column("created_at")]
-        public DataType CreatedAt { get; set; } = DateTime.UtcNow;
+        public DataType CreatedAt { get; set; }
 
         //Navigation Properties
         [ForeignKey("quiz_id")]

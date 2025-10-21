@@ -1,0 +1,50 @@
+2025-10-20 21:16:12.306 -04:00 [INF] Starting web application
+2025-10-20 21:16:12.496 -04:00 [INF] Now listening on: http://localhost:5184
+2025-10-20 21:16:12.505 -04:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-10-20 21:16:12.509 -04:00 [INF] Hosting environment: Development
+2025-10-20 21:16:12.512 -04:00 [INF] Content root path: C:\Revature1\TorresV\gameProject\backend
+2025-10-20 21:16:31.052 -04:00 [WRN] Failed to determine the https port for redirect.
+2025-10-20 21:16:31.066 -04:00 [INF] HTTP GET //Swagger responded 404 in 2.8955 ms
+2025-10-20 21:16:37.958 -04:00 [INF] HTTP GET / responded 404 in 0.2429 ms
+2025-10-20 21:16:42.270 -04:00 [INF] HTTP GET / responded 404 in 0.0663 ms
+2025-10-20 21:17:04.603 -04:00 [INF] HTTP GET / responded 404 in 0.1289 ms
+2025-10-20 21:17:06.829 -04:00 [INF] HTTP GET / responded 404 in 0.0452 ms
+2025-10-20 21:19:16.952 -04:00 [INF] Application is shutting down...
+2025-10-20 21:28:25.119 -04:00 [WRN] The 'DataType' property 'CreatedAt' on entity type 'Question' is configured with a database-generated default, but has no configured sentinel value. The database-generated default will always be used for inserts when the property has the value 'Custom', since this is the CLR default for the 'DataType' type. Consider using a nullable type, using a nullable backing field, or setting the sentinel value for the property to ensure the database default is used when, and only when, appropriate. See https://aka.ms/efcore-docs-default-values for more information.
+2025-10-20 21:28:47.182 -04:00 [WRN] The 'DataType' property 'CreatedAt' on entity type 'Question' is configured with a database-generated default, but has no configured sentinel value. The database-generated default will always be used for inserts when the property has the value 'Custom', since this is the CLR default for the 'DataType' type. Consider using a nullable type, using a nullable backing field, or setting the sentinel value for the property to ensure the database default is used when, and only when, appropriate. See https://aka.ms/efcore-docs-default-values for more information.
+2025-10-20 21:30:42.669 -04:00 [WRN] The 'DataType' property 'CreatedAt' on entity type 'Question' is configured with a database-generated default, but has no configured sentinel value. The database-generated default will always be used for inserts when the property has the value 'Custom', since this is the CLR default for the 'DataType' type. Consider using a nullable type, using a nullable backing field, or setting the sentinel value for the property to ensure the database default is used when, and only when, appropriate. See https://aka.ms/efcore-docs-default-values for more information.
+2025-10-20 21:30:56.704 -04:00 [WRN] The 'DataType' property 'CreatedAt' on entity type 'Question' is configured with a database-generated default, but has no configured sentinel value. The database-generated default will always be used for inserts when the property has the value 'Custom', since this is the CLR default for the 'DataType' type. Consider using a nullable type, using a nullable backing field, or setting the sentinel value for the property to ensure the database default is used when, and only when, appropriate. See https://aka.ms/efcore-docs-default-values for more information.
+2025-10-20 21:37:44.903 -04:00 [WRN] The 'DataType' property 'CreatedAt' on entity type 'Question' is configured with a database-generated default, but has no configured sentinel value. The database-generated default will always be used for inserts when the property has the value 'Custom', since this is the CLR default for the 'DataType' type. Consider using a nullable type, using a nullable backing field, or setting the sentinel value for the property to ensure the database default is used when, and only when, appropriate. See https://aka.ms/efcore-docs-default-values for more information.
+2025-10-20 21:37:46.787 -04:00 [ERR] Failed executing DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [questions] (
+    [Id] int NOT NULL IDENTITY,
+    [quiz_id] int NOT NULL,
+    [question_text] nvarchar(1000) NOT NULL,
+    [question_order] int NOT NULL,
+    [time_limit] int NOT NULL,
+    [created_at] int NOT NULL DEFAULT (GETUTCDATE()),
+    [quiz_id1] int NULL,
+    CONSTRAINT [PK_questions] PRIMARY KEY ([Id]),
+    CONSTRAINT [FK_questions_Quizzes_quiz_id] FOREIGN KEY ([quiz_id]) REFERENCES [Quizzes] ([Id]) ON DELETE CASCADE
+);
+2025-10-20 21:39:41.342 -04:00 [WRN] The 'DataType' property 'CreatedAt' on entity type 'Question' is configured with a database-generated default, but has no configured sentinel value. The database-generated default will always be used for inserts when the property has the value 'Custom', since this is the CLR default for the 'DataType' type. Consider using a nullable type, using a nullable backing field, or setting the sentinel value for the property to ensure the database default is used when, and only when, appropriate. See https://aka.ms/efcore-docs-default-values for more information.
+2025-10-20 21:39:41.975 -04:00 [ERR] Failed executing DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [questions] (
+    [Id] int NOT NULL IDENTITY,
+    [quiz_id] int NOT NULL,
+    [question_text] nvarchar(1000) NOT NULL,
+    [question_order] int NOT NULL,
+    [time_limit] int NOT NULL,
+    [created_at] int NOT NULL DEFAULT (GETUTCDATE()),
+    [quiz_id1] int NULL,
+    CONSTRAINT [PK_questions] PRIMARY KEY ([Id]),
+    CONSTRAINT [FK_questions_Quizzes_quiz_id] FOREIGN KEY ([quiz_id]) REFERENCES [Quizzes] ([Id]) ON DELETE CASCADE
+);
+2025-10-20 21:40:01.019 -04:00 [INF] Starting web application
+2025-10-20 21:40:01.107 -04:00 [INF] Now listening on: http://localhost:5184
+2025-10-20 21:40:01.112 -04:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-10-20 21:40:01.113 -04:00 [INF] Hosting environment: Development
+2025-10-20 21:40:01.114 -04:00 [INF] Content root path: C:\Revature1\TorresV\gameProject\backend
+2025-10-20 21:40:04.452 -04:00 [WRN] Failed to determine the https port for redirect.
+2025-10-20 21:40:04.466 -04:00 [INF] HTTP GET / responded 404 in 3.4608 ms
+2025-10-20 21:40:17.818 -04:00 [INF] Application is shutting down...

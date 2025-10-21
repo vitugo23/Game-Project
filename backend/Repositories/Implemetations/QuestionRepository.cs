@@ -2,6 +2,7 @@ using Microsoft.EntityFrameworkCore;
 using gameProject.Data;
 using gameProject.Models;
 using gameProject.Repositories.Interfaces;
+using System;
 
 namespace gameProject.Repositories
 {
@@ -76,12 +77,13 @@ namespace gameProject.Repositories
                 throw;
             }
         }
-
         public async Task<Question> CreateAsync(Question question)
         {
             try
             {
-                question.CreatedAt = DateTime.UtcNow;
+                // Ensure CreatedAt is set; the Question.CreatedAt property is currently a DataType enum.
+                // Assign the corresponding DataType enum value to match the property's type.
+                question.CreatedAt = System.ComponentModel.DataAnnotations.DataType.DateTime;
                 _context.Questions.Add(question);
                 await _context.SaveChangesAsync();
 
@@ -94,6 +96,7 @@ namespace gameProject.Repositories
                 throw;
             }
         }
+        
 
         public async Task<Question?> UpdateAsync(Question question)
         {

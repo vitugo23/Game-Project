@@ -49,7 +49,7 @@ namespace gameProject.Services
                     .Include(l => l.Player)
                         .ThenInclude(p => p.User)
                     .OrderByDescending(l => l.Score)
-                    .ToDictionary(l => l.Player.User.Username, l => l.Score);
+                    .ToDictionaryAsync(l => l.Player.User.Username, l => l.Score);
 
                 _logger.LogInformation("Retrieved leaderboard for game record {GameRecordId} with {Count} entries", 
                     gameRecordId, leaderboard.Count);
@@ -77,7 +77,7 @@ namespace gameProject.Services
                     .Include(l => l.Player)
                         .ThenInclude(p => p.User)
                     .OrderByDescending(l => l.Score)
-                    .ToDictionary(l => l.Player.User.Username, l => l.Score);
+                    .ToDictionaryAsync(l => l.Player.User.Username, l => l.Score);
 
                 _logger.LogInformation("Retrieved current leaderboard for game session {GameSessionId} with {Count} entries", 
                     gameSessionId, leaderboard.Count);

@@ -10,10 +10,11 @@
 using System;
 using System.Reflection;
 
+[assembly: Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute("a4633774-9b9c-4172-822c-92ea0502221d")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("gameProject")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+664b970f2f08e7373fb33de3f933e8e35e5f5f95")]
 [assembly: System.Reflection.AssemblyProductAttribute("gameProject")]
 [assembly: System.Reflection.AssemblyTitleAttribute("gameProject")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

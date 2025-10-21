@@ -4,9 +4,9 @@ namespace gameProject.Repositories.Interfaces
 {
     public interface IGameRecordRepository
     {
-        Task<List<GameRecord>> GetAllGameRecordsAsync();
+        Task<List<GameRecord>> GetAllGameRecordAsync();
         Task<GameRecord?> GetGameRecordByIdAsync(int gameRecordId);
         Task<GameRecord> CreateGameRecordAsync(GameRecord gameRecord);
-        Task<bool> DeleteGameRecordsAsync(int GameRecordId);
+        Task<bool> DeleteGameRecordAsync(int GameRecordId);
     }
 }

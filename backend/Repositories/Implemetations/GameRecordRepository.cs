@@ -83,5 +83,10 @@ namespace gameProject.Repositories
                 throw;
             }
         }
+
+        public Task<List<GameRecord>> GetAllGameRecordAsync()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

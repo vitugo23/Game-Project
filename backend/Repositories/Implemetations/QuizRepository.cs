@@ -159,5 +159,15 @@ namespace gameProject.Repositories
                 throw;
             }
         }
+
+        public Task<IEnumerable<Quiz>> GetAllByAsync()
+        {
+            throw new NotImplementedException();
+        }
+
+        Task<IAsyncEnumerable<Quiz>> IQuizRepository.GetByCreatorIdAsync(int creatorId)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
